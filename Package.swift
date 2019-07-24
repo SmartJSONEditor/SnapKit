@@ -1,3 +1,5 @@
+// swift-tools-version:4.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 //
 //  SnapKit
 //
@@ -25,5 +27,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "SnapKit"
+    name: "SnapKit",
+	targets: [
+        .target(name: "SnapKit", path:"Source")
+    ]
 )
